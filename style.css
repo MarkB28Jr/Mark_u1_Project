@@ -1,0 +1,42 @@
+/*
+CSS FOR GAME PAGE
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+section.name {
+    display: flex;
+    position: center;
+    height: 50 vh;
+    width: 50 vh;
+    text-align: center;
+    align-items: flex-start;
+    flex-direction: row;
+    border: solid 5px black;
+    color: blue;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem;
+}
+
+section.gameBoard {
+    display: grid;
+    justify-content: center;
+    flex-direction: row;
+    background-color: aqua;
+    border: solid 5px black;
+    margin: 1rem;
+}
+
+section.cards {
+    border: solid 5px black;
+    display: inline-block;
+}
+
+
+
+
+
+

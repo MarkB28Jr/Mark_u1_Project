@@ -4,39 +4,46 @@ CSS FOR GAME PAGE
 
 * {
     box-sizing: border-box;
+    background-color: darkgray;
 }
 
 section.name {
     display: flex;
-    position: center;
-    height: 50 vh;
-    width: 50 vh;
+    justify-content: center;
     text-align: center;
-    align-items: flex-start;
-    flex-direction: row;
-    border: solid 5px black;
-    color: blue;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 1rem;
+    color: rgb(0, 0, 0);
+    font-size: 5vh;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    height: 10vh;
 }
 
-section.gameBoard {
+section.gameContainer {
     display: grid;
-    justify-content: center;
-    flex-direction: row;
+    grid-template-rows: repeat(2, 2fr);
+    grid-template-columns: repeat(7, 3fr);
+    align-items: center;
+    height: 70vh;
+}
+
+div.cards {
+    border: .25vmin solid black;
+    align-content: right;
+    margin: 1vmin;
     background-color: aqua;
-    border: solid 5px black;
-    margin: 1rem;
+    height: 12.5rem;
 }
 
-section.cards {
-    border: solid 5px black;
-    display: inline-block;
+div.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.gameContainer>div:hover {
+    background-color: blueviolet;
+}
 
-
-
-
-
+button:hover {
+    color: aqua;
+}

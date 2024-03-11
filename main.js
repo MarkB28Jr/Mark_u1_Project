@@ -2,54 +2,69 @@
 const boardEl = document.getElementsByClassName('gameBoard');
 const cardsEl = document.getElementsByClassName('cards');
 const titleEl = document.querySelector('h1');
-const winningCombos = [
-    [i1, i2],
-    [i3, i4],
-    [i5, i6],
-    [i7, i8],
-    [i9, i10],
-    [i11, i12],
-    [i13, i14],    
-]
+const playerStatus = document.querySelector('p');
 
-let currentPlayer = [
-    
-]
+let currentPlayer = 'Bob';
+let score = 0;
+
+playerStatus.innerHTML = `<u>Score</u> <br> ${currentPlayer}: ${score}`;
+console.log(playerStatus);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 // functions
 
-function init() {
+// function init() {
 
-}
+// }
 
-function render() {
+// function render() {
 
-}
+// }
 
-function message() {
+// function message() {
 
-}
+// }
 
-function startPage() {
+// function startPage() {
     
-}
+// }
 
-function restartPage() {
+// function restartPage() {
     
-}
+// }
 
-function randomizeCards() {
+// function randomizeCards() {
 
-}
+// }
 
-function winningCombos() {
+// function winningCombos() {
 
-}
+// }
 
-function boxClicked() {
+// function boxClicked() {
 
-}
+// }
+
 // event listners
 

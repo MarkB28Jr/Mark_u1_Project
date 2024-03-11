@@ -47,6 +47,7 @@
 - MrJanHorak / battleship
     - looked at how Jan Horak did his README.md and Pseudocode
     - [Github battleship](https://github.com/MrJanHorak/battleship/blob/main/pseudocode.md)
+- 
 
 # ***Wireframe***
 ### Added wireframe file to github repository

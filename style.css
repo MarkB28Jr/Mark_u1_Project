@@ -4,46 +4,72 @@ CSS FOR GAME PAGE
 
 * {
     box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    flex-direction: column;
+    /* width: 100vw;
+    height: 100vh; */
     background-color: darkgray;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("https://img.freepik.com/free-photo/galactic-night-sky-astronomy-science-combined-generative-ai_188544-9656.jpg?w=1380&t=st=1710118611~exp=1710119211~hmac=b8ef6d19d947b128c6677f66b789495f9895df14090f9449b65cc1b45dfbbe7d");
+    margin: 0 auto;
 }
 
 section.name {
-    display: flex;
-    justify-content: center;
     text-align: center;
-    color: rgb(0, 0, 0);
-    font-size: 5vh;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    height: 10vh;
+    align-items: center;
+    color: rgb(255, 91, 3);
+    font-size: 3vmin;
+}
+
+.playerStats {
+    display: grid;
+    text-align: center;
+    color: rgb(191, 0, 255);
+}
+
+.playerStats>div {
+    margin: .5vmin;
 }
 
 section.gameContainer {
     display: grid;
-    grid-template-rows: repeat(2, 2fr);
-    grid-template-columns: repeat(7, 3fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(7, 9fr);
     align-items: center;
-    height: 70vh;
+    height: 60vmin;
 }
 
 div.cards {
-    border: .25vmin solid black;
-    align-content: right;
-    margin: 1vmin;
-    background-color: aqua;
-    height: 12.5rem;
+    border: .05vmin solid white;
+    border-radius: 10%;
+    margin: .5vmin;
+    background-color: transparent;
+    height: 28vmin;
 }
 
-div.buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+button {
+    margin-top: -5vmin;
+    height: 3vmin;
+    width: 12vmin;
+    font-size: 1.5vmin;
+    background-color: rgba(0, 0, 0, 0.454);
+    color: rgb(255, 119, 0);
+    border-radius: 10%;
 }
 
 .gameContainer>div:hover {
-    background-color: blueviolet;
+    background-color: rgba(255, 89, 29, 0.523);
 }
 
 button:hover {
-    color: aqua;
+    color: rgb(191, 0, 255);
+}
+
+p {
+    font-size: 3vmin;
 }

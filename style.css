@@ -16,11 +16,15 @@ body {
     background-image: url("https://img.freepik.com/free-photo/galactic-night-sky-astronomy-science-combined-generative-ai_188544-9656.jpg?w=1380&t=st=1710118611~exp=1710119211~hmac=b8ef6d19d947b128c6677f66b789495f9895df14090f9449b65cc1b45dfbbe7d");
 }
 
-section.name {
+.name {
     text-align: center;
     align-content: center;
     color: rgb(255, 91, 3);
     font-size: 3vmin;
+}
+
+p {
+    font-size: 2vmin;
 }
 
 .playerStats {
@@ -28,24 +32,6 @@ section.name {
     align-content: center;
     color: rgb(191, 0, 255);
     margin-bottom: 5vmin;
-}
-
-section.gameContainer {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(7, 1fr);
-    height: 63vh;
-    /* border: 1px solid white; */
-}
-
-.cards {
-    width: 100%;
-    height: 100%;
-    perspective: 100px;
-}
-
-.cards:hover{
-    cursor: pointer;
 }
 
 button {
@@ -60,19 +46,75 @@ button:hover {
     color: rgb(191, 0, 255);
 }
 
-p {
-    font-size: 2vmin;
+.gameContainer {
+    display: grid;
+    grid-template-rows: repeat(2, 2fr);
+    grid-template-columns: repeat(7, 7fr);
+    height: 63vh;
 }
 
-.front-card, .back-card {
+.cards {
+    margin: 5px;
+    transform-style: preserve-3d;
+    transform: scale(1);
+    transition: transform .95s;
+    border-radius: 15%;
+
+}
+
+.cards:hover {
+    cursor: pointer;
+}
+
+.cards.flip {
+    transform: rotateY(180deg);
+}
+
+.front-card,
+.back-card {
     width: 100%;
     height: 100%;
-    padding: 10px 5px 10px 5px;
+    border-radius: 15%;
     position: absolute;
     transition: transform 0.5s;
     backface-visibility: hidden;
 }
 
-.front-card{
+.front-card {
     transform: rotateY(180deg);
+}
+
+/*
+Cards Color = Front & Back
+*/
+#purple {
+    background-color: rgba(132, 0, 255, 0.411);
+}
+
+#red {
+    background-color: rgb(255, 38, 0);
+}
+
+#green {
+    background-color: rgb(51, 255, 0);
+}
+
+#lightBlue {
+    background-color: rgb(0, 229, 255);
+}
+
+#yellow {
+    background-color: rgb(238, 255, 0);
+}
+
+#orange {
+    background-color: rgb(255, 128, 0);
+}
+
+#pink {
+    background-color: rgb(255, 0, 238);
+}
+
+#blue {
+    background-color: rgb(34, 0, 255);
 }

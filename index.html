@@ -10,17 +10,15 @@
 </head>
 
 <body>
-    <section >
-        <section class="splash">
-            <h1 class="fadeIn" id="splashTitle"></h1>
+    <section id="splash">
+        <h1 class="fadeIn" id="splashTitle"></h1>
 
-            <input type="textField" id="userText" placeholder="Enter Name:"><br>
-            <button id="submit">Submit</button>
+        <input type="textField" id="userText" placeholder="Enter Name:"><br>
+        <button id="submit">Submit</button><br>
 
-            <div>
-                <button class="startBtn">Start Game</button>
-            </div>
-        </section>
+
+            <button id="startBtn" onclick="document.getElementById('splash').style.display='none'">Start Game</button>
+
     </section>
     <section class="name">
 

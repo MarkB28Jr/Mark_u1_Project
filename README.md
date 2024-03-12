@@ -47,8 +47,18 @@
 - MrJanHorak / battleship
     - looked at how Jan Horak did his README.md and Pseudocode
     - [Github battleship](https://github.com/MrJanHorak/battleship/blob/main/pseudocode.md)
+- Bro Code
+    - Used this video to learn how to take user input for their name and make it appear in my score display
+    - [YouTube](https://www.youtube.com/watch?v=JeXqaKeJSRI)
+- Box Shadowing buttons
+    -I learned how to put box shadowing around my splash screen buttons
+    -[CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow)
+- Splash Screen
+    - Learned how to make a splash screen using this video
+    - [Splash Screen](https://www.youtube.com/watch?v=MOlaldp1Fv4&t=219s)
 - 
-
+    -
+    -
 # ***Wireframe***
 ### Added wireframe file to github repository
 ![alt text](image.png)

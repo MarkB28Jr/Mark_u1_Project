@@ -1,11 +1,9 @@
-/*
-CSS FOR GAME PAGE
-*/
-
+/* CSS FOR GAME PAGE */
 * {
     box-sizing: border-box;
 }
 
+/* Background for game page */
 body {
     display: flex;
     flex-direction: column;
@@ -14,9 +12,82 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-image: url("https://img.freepik.com/free-photo/galactic-night-sky-astronomy-science-combined-generative-ai_188544-9656.jpg?w=1380&t=st=1710118611~exp=1710119211~hmac=b8ef6d19d947b128c6677f66b789495f9895df14090f9449b65cc1b45dfbbe7d");
+    margin: 0;
 }
 
-.name {
+/* SPLASH SCREEN */
+.splash{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgb(0, 0, 0);
+    z-index: 200;
+    color: rgb(254, 97, 0);
+    text-align: center;
+    line-height: 10vmin;
+    font-size: 5vmin;
+}
+
+@keyframes fadeIn {
+    to{
+        opacity: 1;
+    }
+}
+
+.fadeIn{
+    opacity: 1;
+    animation: fadeIn 3s ease-in forwards;
+}
+
+@keyframes fadeOut {
+    to{
+        opacity: 0;
+    }
+}
+
+#fadeOut{
+    opacity: 0;
+    animation: fadeOut 1s ease-out backwards;
+}
+
+#splashTitle{
+    text-align: center;
+    align-content: center;
+}
+
+#userText {
+    text-align: center;
+    font-size: 3vmin;
+    width: 25vmin;
+    height: 4vmin;
+    box-shadow: 1px 1px 2em  rgb(149, 0, 255);
+    border: 1px solid rgb(149, 0, 255);
+}
+
+.startBtn{
+    height: 4vmin;
+    width: 12vmin;
+    font-size: 2vmin;
+    box-shadow: 1px 1px 2em  rgb(149, 0, 255);
+    border-radius: 50%;
+}
+
+#submit{
+    height: 4vmin;
+    width: 10vmin;
+    font-size: 2vmin;
+    box-shadow: 1px 1px 2em  rgb(149, 0, 255);
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+/* Game page */
+#title {
     text-align: center;
     align-content: center;
     color: rgb(255, 91, 3);
@@ -84,9 +155,7 @@ button:hover {
     transform: rotateY(180deg);
 }
 
-/*
-Cards Color = Front & Back
-*/
+/* Cards Color = Front & Back */
 
 #purple {
     background-color: rgba(132, 0, 255, 0.411);

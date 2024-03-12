@@ -79,3 +79,30 @@
     - once card is clicked flips first card over.
     - second card is clicked flip card over for 5-10 seconds
     - once game is restart randomized runs again.
+
+
+
+
+## Game
+- build splash screen
+- build text input for score name
+- build startgame btn
+- have game get rid of splash screen
+
+- build title
+- player status area
+- 
+- build gameboard
+- build cards
+    - make 14 cards 7 pairs
+- make cards flip
+    - have all cards rotate once clicked
+    - make it so cards cant be clicked twice
+    - make it so player only gets 2 clicks per turn
+    - if cards are a match they stay 
+    - once a pair has been found you take next turn
+    - if the player finds a pair the score will increase by 1
+        - the cards will be compared to each other to see if they match
+- if cards are not a match the cards then flip back over and the player trys again
+- once all cards have been matched the game is over
+    - reset game button will shuffle the cards locations on the board

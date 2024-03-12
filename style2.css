@@ -1,3 +1,13 @@
-/*
-CSS FOR START / RESTART PAGE
-*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: darkgray;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-image: url("https://img.freepik.com/free-photo/galactic-night-sky-astronomy-science-combined-generative-ai_188544-9656.jpg?w=1380&t=st=1710118611~exp=1710119211~hmac=b8ef6d19d947b128c6677f66b789495f9895df14090f9449b65cc1b45dfbbe7d"); */
+}

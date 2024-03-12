@@ -1,16 +1,13 @@
 // cache
 const cardsEl = document.querySelectorAll('.cards');
 const titleEl = document.querySelector('h1');
-const playerStatus = document.querySelector('p');
 
+
+let currentPlayer = 'Unknown Player';
+let score = 0;
 let flippedCard = false;
 let lockBoard = false;
-let currentPlayer = '';
-let score = 0;
 let firstCard, secondCard;
-
-playerStatus.innerHTML = `<u>Score</u> <br> ${currentPlayer}: ${score}`;
-console.log(playerStatus);
 
 function flipCard() {
     if (lockBoard) return;
@@ -29,8 +26,11 @@ function flipCard() {
 
 cardsEl.forEach(card => card.addEventListener('click', flipCard));
 
-
-
+// SHOW USER NAME AND SCORE
+document.getElementById("submit").onclick = function() {
+    currentPlayer = document.getElementById("userText").value;
+    document.getElementById("scoreDisplay").innerHTML = `<u>Score Baby</u> <br> ${currentPlayer}: ${score}`
+};
 
 
 

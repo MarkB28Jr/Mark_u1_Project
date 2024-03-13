@@ -39,17 +39,6 @@ body {
     animation: fadeIn 3s ease-in forwards;
 }
 
-@keyframes fadeOut {
-    to{
-        opacity: 0;
-    }
-}
-
-#fadeOut{
-    opacity: 0;
-    animation: fadeOut 1s ease-out backwards;
-}
-
 #splashTitle{
     text-align: center;
     align-content: center;

@@ -11,7 +11,7 @@ let flippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
 
-// SHOW SPLASH TITLE / TITLE / USERNAME / SCORE
+// SHOW SPLASH TITLE / TITLE / USERNAME / SCORE DISPLAY
 document.getElementById("submit").onclick = function () {
     currentPlayer = document.getElementById("userText").value;
     document.getElementById("scoreDisplay").innerHTML = `<u>Score</u> <br> ${currentPlayer}: ${score}`
@@ -37,14 +37,15 @@ function checkMatch() {
     let match = firstCard.dataset.i === secondCard.dataset.i;
     match ? disableCard() : reflipCard()
     if (match === true) {
-        return score = score + 1
+        score = score + 1
+        document.getElementById('scoreDisplay').innerHTML = `<u>Score</u> <br>${currentPlayer}: ${score}`
     }
 }
 
 function disableCard() {
     firstCard.removeEventListener('click', flipCard)
     secondCard.removeEventListener('click', flipCard)
-    resetBoard()
+    resetBoard();
 };
 
 function reflipCard() {
@@ -62,19 +63,24 @@ function resetBoard() {
     [firstCard, secondCard] = [null, null];
 }
 
-
-(function shuffleCards() {
+function shuffleCards() {
     cardsEl.forEach(card => {
         let randomPos = Math.floor(Math.random() * 14);
         card.style.order = randomPos;
     });
-})();
-
-
-document.getElementById('restartGame').onclick = function () {
-    
-    resetBoard()
 }
+shuffleCards()
+
+function restartGame(){
+    score = 0;
+    document.getElementById('scoreDisplay').innerHTML = `<u>Score</u> <br>${currentPlayer}: ${score}`
+    cardsEl.forEach(card => {
+        card.addEventListener('click', flipCard)
+        card.classList.remove('flip')
+    })
+    shuffleCards();
+}
+document.getElementById('restartGame').addEventListener('click', restartGame)
 
 cardsEl.forEach(card => card.addEventListener('click', flipCard));
 

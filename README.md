@@ -56,12 +56,12 @@
 - Splash Screen
     - Learned how to make a splash screen using this video
     - [Splash Screen](https://www.youtube.com/watch?v=MOlaldp1Fv4&t=219s)
-- StartBtn Splash Screen disappears
+- Splash Screen disappears
     - use this to figure out how to make startbtn get rid of splash screen to play game
     -[StartBtn](https://www.w3schools.com/howto/howto_css_login_form.asp)
-- 
-    - 
-    - 
+- Link to second page
+    - used this to learn how to click a button and change webpage
+    - [Website](https://www.altcademy.com/blog/how-to-link-a-button-to-another-page-in-html/)
 - 
     - 
     - 

@@ -65,8 +65,8 @@ function resetBoard() {
 
 function shuffleCards() {
     cardsEl.forEach(card => {
-        let randomPos = Math.floor(Math.random() * 14);
-        card.style.order = randomPos;
+        let random = Math.floor(Math.random() * 14);
+        card.style.order = random;
     });
 }
 shuffleCards()
@@ -80,6 +80,7 @@ function restartGame(){
     })
     shuffleCards();
 }
+
 document.getElementById('restartGame').addEventListener('click', restartGame)
 
 cardsEl.forEach(card => card.addEventListener('click', flipCard));

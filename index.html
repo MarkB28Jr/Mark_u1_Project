@@ -4,104 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game</title>
+    <title>Start Screen</title>
     <script defer src="main.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
 </head>
 
 <body>
-    <section id="splash">
-        <h1 class="fadeIn" id="splashTitle"></h1>
+    <section class="startPage">
+        <h1 class="fadeIn" id="title"></h1>
 
-        <input type="textField" id="userText" placeholder="Enter Name:"><br>
+        <input type="textField" id="userText" placeholder="Enter Name: "><br>
         <button id="submit">Submit</button><br>
 
-        <button id="startBtn" onclick="document.getElementById('splash').style.display='none'">Start Game</button>
+        <button id="startBtn" onclick="window.location.href='game.html'">Play Game</button>
     </section>
 
-    <section class="name">
-        <h1 id="title"></h1>
-    </section>
-    <section class="playerStats">
-        <div>
-            <p id="scoreDisplay"></p>
-        </div>
-        <div>
-            <button id="restartGame">Resart Game</button>
-        </div>
-    </section>
-
-    <section class="gameContainer">
-        <div class="cards" data-i="red">
-            <div class="front-card" id="red"></div>
-            <div class="back-card" id="purple"></div>
-        </div>
-
-        <div class="cards" data-i="red">
-            <div class="front-card" id="red"></div>
-            <div class="back-card" id="purple"></div>
-        </div>
-
-        <div class="cards" data-i="blue">
-            <div class="front-card" id="blue"></div>
-            <div class="back-card" id="purple"></div>
-        </div>
-
-        <div class="cards" data-i="blue">
-            <div class="front-card" id="blue"></div>
-            <div class="back-card" id="purple"></div>
-        </div>
-
-        <div class="cards" data-i="pink">
-            <div class="front-card" id="pink"></div>
-            <div class="back-card" id="purple"></div>
-        </div>
-
-        <div class="cards" data-i="pink">
-            <div class="front-card" id="pink"></div>
-            <div class="back-card" id="purple"></div>
-        </div>
-
-        <div class="cards" data-i="orange">
-            <div class="front-card" id="orange"></div>
-            <div class="back-card" id="purple"></div>
-        </div>
-
-        <div class="cards" data-i="orange">
-            <div class="front-card" id="orange"></div>
-            <div class="back-card" id="purple"></div>
-        </div>
-
-        <div class="cards" data-i="yellow">
-            <div class="front-card" id="yellow"></div>
-            <div class="back-card" id="purple"></div>
-        </div>
-
-        <div class="cards" data-i="yellow">
-            <div class="front-card" id="yellow"></div>
-            <div class="back-card" id="purple"></div>
-        </div>
-
-        <div class="cards" data-i="green">
-            <div class="front-card" id="green"></div>
-            <div class="back-card" id="purple"></div>
-        </div>
-
-        <div class="cards" data-i="green">
-            <div class="front-card" id="green"></div>
-            <div class="back-card" id="purple"></div>
-        </div>
-
-        <div class="cards" data-i="lightBlue">
-            <div class="front-card" id="lightBlue"></div>
-            <div class="back-card" id="purple"></div>
-        </div>
-
-        <div class="cards" data-i="lightBlue">
-            <div class="front-card" id="lightBlue"></div>
-            <div class="back-card" id="purple"></div>
-        </div>
-    </section>
 </body>
 
 </html>

@@ -56,9 +56,26 @@
 - Splash Screen
     - Learned how to make a splash screen using this video
     - [Splash Screen](https://www.youtube.com/watch?v=MOlaldp1Fv4&t=219s)
+- StartBtn Splash Screen disappears
+    - use this to figure out how to make startbtn get rid of splash screen to play game
+    -[StartBtn](https://www.w3schools.com/howto/howto_css_login_form.asp)
 - 
-    -
-    -
+    - 
+    - 
+- 
+    - 
+    - 
+- 
+    - 
+    - 
+- 
+    - 
+    - 
+- 
+    - 
+    - 
+
+
 # ***Wireframe***
 ### Added wireframe file to github repository
 ![alt text](image.png)

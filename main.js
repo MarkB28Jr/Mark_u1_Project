@@ -1,11 +1,14 @@
-// cache
+// const cache
 const cardsEl = document.querySelectorAll('.cards');
-const splashTitleEl = document.getElementById('splashTitle');
-splashTitleEl.textContent = 'Memory Game'
+
 const titleEl = document.getElementById('title');
 titleEl.textContent = 'Memory Game'
 
-let currentPlayer;
+const splashTitle = document.querySelector('#splashTitle');
+splashTitle.textContent = 'Welcome, Have Fun!';
+
+// let cache
+let currentPlayer = 'Unknown';
 let score = 0;
 let flippedCard = false;
 let lockBoard = false;
@@ -14,10 +17,14 @@ let firstCard, secondCard;
 // SHOW SPLASH TITLE / TITLE / USERNAME / SCORE DISPLAY
 document.getElementById("submit").onclick = function () {
     currentPlayer = document.getElementById("userText").value;
-    document.getElementById("scoreDisplay").innerHTML = `<u>Score</u> <br> ${currentPlayer}: ${score}`
+    document.getElementById("scoreDisplay").innerHTML = `<u>Score</u><br>${currentPlayer}: ${score}`
+    document.getElementById('splash').style.display = ('none')
 };
 
+
+
 // Game functions
+// Flip cards and invoke match
 function flipCard() {
     if (lockBoard) return;
     if (this === firstCard) return;
@@ -33,6 +40,7 @@ function flipCard() {
     checkMatch();
 }
 
+// Check if cards are same and disable and reflip
 function checkMatch() {
     let match = firstCard.dataset.i === secondCard.dataset.i;
     match ? disableCard() : reflipCard()
@@ -42,12 +50,14 @@ function checkMatch() {
     }
 }
 
+// Disable cards so not to be reflipped if they match
 function disableCard() {
     firstCard.removeEventListener('click', flipCard)
     secondCard.removeEventListener('click', flipCard)
     resetBoard();
 };
 
+// reflip if not match
 function reflipCard() {
     lockBoard = true;
 
@@ -58,11 +68,15 @@ function reflipCard() {
     }, 1000)
 }
 
+// reset board 
 function resetBoard() {
-    [flippedCard, lockBoard] = [false, false];
-    [firstCard, secondCard] = [null, null];
+    flippedCard = false;
+    lockBoard = false;
+    firstCard = null;
+    secondCard = null;
 }
 
+// Shuffle cards and position on board
 function shuffleCards() {
     cardsEl.forEach(card => {
         let random = Math.floor(Math.random() * 14);
@@ -71,6 +85,7 @@ function shuffleCards() {
 }
 shuffleCards()
 
+// restart game button shuffles cards and resets board
 function restartGame(){
     score = 0;
     document.getElementById('scoreDisplay').innerHTML = `<u>Score</u> <br>${currentPlayer}: ${score}`
@@ -81,7 +96,9 @@ function restartGame(){
     shuffleCards();
 }
 
+// add event to restart btn
 document.getElementById('restartGame').addEventListener('click', restartGame)
 
+// add event to cards for click
 cardsEl.forEach(card => card.addEventListener('click', flipCard));
 

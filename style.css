@@ -56,10 +56,10 @@ body {
     animation: fadeOut 3ms ease-out backwards;
 }
 
-/* #splashTitle{
+#splashTitle{
     text-align: center;
     align-content: center;
-} */
+}
 
 #userText {
     text-align: center;

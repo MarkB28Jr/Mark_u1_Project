@@ -9,8 +9,9 @@ body {
 }
 
 #title {
-    height: 100vh;
+
     width: 100%;
+    align-content: center;
     text-align: center;
     align-content: center;
     color: rgb(255, 89, 0);
@@ -28,9 +29,7 @@ body {
 }
 
 #startBtn{
-    position: absolute;
-    z-index: 100;
-    height: 4vmin;
+    height: 5vmin;
     width: 12vmin;
     font-size: 2vmin;
     box-shadow: 1px 1px 2em  rgb(149, 0, 255);
@@ -41,9 +40,10 @@ button {
     height: 3vmin;
     width: 12vmin;
     font-size: 1.5vmin;
+    align-items: center;
     background-color: rgba(0, 0, 0, 0.454);
     box-shadow: 1px 1px 2em  rgb(149, 0, 255);
-    color: rgb(255, 119, 0);
+    color: rgb(252, 113, 0);
 }
 
 button:hover {

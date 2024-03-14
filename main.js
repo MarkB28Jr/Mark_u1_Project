@@ -4,24 +4,22 @@ const cardsEl = document.querySelectorAll('.cards');
 const titleEl = document.getElementById('title');
 titleEl.textContent = 'Memory Game'
 
-const splashTitle = document.querySelector('#splashTitle');
-splashTitle.textContent = 'Welcome, Have Fun!';
+const splashTitle = document.getElementById('splashTitle');
+splashTitle.innerHTML = 'Welcome, Have Fun!';
 
 // let cache
-let currentPlayer = 'Unknown';
+let currentPlayer;
 let score = 0;
 let flippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
 
 // SHOW SPLASH TITLE / TITLE / USERNAME / SCORE DISPLAY
-document.getElementById("submit").onclick = function () {
+document.getElementById("submit").onclick = function(){
     currentPlayer = document.getElementById("userText").value;
     document.getElementById("scoreDisplay").innerHTML = `<u>Score</u><br>${currentPlayer}: ${score}`
     document.getElementById('splash').style.display = ('none')
 };
-
-
 
 // Game functions
 // Flip cards and invoke match

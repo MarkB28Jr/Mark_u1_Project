@@ -26,9 +26,7 @@ document.getElementById("submit").onclick = function(){
 function flipCard() {
     if (lockBoard) return;
     if (this === firstCard) return;
-
     this.classList.add('flip');
-
     if (!flippedCard) {
         flippedCard = true;
         firstCard = this;

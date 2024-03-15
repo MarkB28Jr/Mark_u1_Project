@@ -41,7 +41,6 @@
         - Begin describing the process the game will follow
         - Develop the different steps the game will follow 
 
-
 # ***Credits***
 #### The following sites are what I used and referenced during the process of building my Picture Memory Game.
 - MrJanHorak / battleship
@@ -62,22 +61,13 @@
 - Link to second page
     - used this to learn how to click a button and change webpage
     - [Website](https://www.altcademy.com/blog/how-to-link-a-button-to-another-page-in-html/)
-- 
-    - 
-    - 
-- 
-    - 
-    - 
-- 
-    - 
-    - 
-- 
-    - 
-    - 
-
+- Used this website
+    - Used it to understand the kind of functions I would need to make the game work
+    - [Website](https://marina-ferreira.github.io/tutorials/js/memory-game/)
+- ChatGPT
+    - Used ChatGPT to help debug my code when I would get stuck. I also used it to help understand what my code was doing
+    - [Website](https://chat.openai.com/)
 
 # ***Wireframe***
 ### Added wireframe file to github repository
 ![alt text](image.png)
-
-

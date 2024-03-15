@@ -9,7 +9,6 @@ body {
 }
 
 #title {
-
     width: 100%;
     align-content: center;
     text-align: center;
@@ -49,8 +48,3 @@ button {
 button:hover {
     color: rgb(191, 0, 255);
 }
-
-
-
-
-

@@ -36,7 +36,7 @@ function flipCard() {
     checkMatch();
 }
 
-// Check if cards are same and disable and reflip
+// Check if cards are same and disable and reflip also adds up score after each match
 function checkMatch() {
     let match = firstCard.dataset.i === secondCard.dataset.i;
     match ? disableCard() : reflipCard()
@@ -56,7 +56,6 @@ function disableCard() {
 // reflip if not match
 function reflipCard() {
     lockBoard = true;
-
     setTimeout(() => {
         firstCard.classList.remove('flip')
         secondCard.classList.remove('flip')

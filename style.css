@@ -24,7 +24,7 @@ body {
     position: fixed;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.646);
+    background: rgba(0, 0, 0, 0.815);
     z-index: 1000;
     color: rgb(254, 97, 0);
     text-align: center;
@@ -32,17 +32,6 @@ body {
     justify-content: center;
     line-height: 5vmin;
     font-size: 5vmin;
-}
-
-@keyframes fadeIn {
-    to{
-        opacity: 1;
-    }
-}
-
-.fadeIn{
-    opacity: 1;
-    animation: fadeIn 1s ease-in forwards;
 }
 
 #splashTitle{
@@ -80,11 +69,11 @@ body {
     text-align: center;
     align-content: center;
     color: rgb(255, 91, 3);
-    font-size: 3vmin;
+    font-size: 5vmin;
 }
 
 p {
-    font-size: 2vmin;
+    font-size: 2.5vmin;
 }
 
 .playerStats {
@@ -95,8 +84,9 @@ p {
 }
 
 button {
-    height: 3vmin;
+    height: 3.5vmin;
     width: 12vmin;
+    border-radius: 50%;
     font-size: 1.5vmin;
     background-color: rgba(0, 0, 0, 0.454);
     box-shadow: 1px 1px 2em  rgb(149, 0, 255);
@@ -115,12 +105,11 @@ button:hover {
 }
 
 .cards {
-    margin: 5px;
+    margin: 8px;
     transform-style: preserve-3d;
     transform: scale(1);
-    transition: transform .3s;
+    transition: transform .15s;
     border-radius: 15%;
-
 }
 
 .cards:hover {
